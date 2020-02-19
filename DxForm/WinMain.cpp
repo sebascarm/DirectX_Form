@@ -51,7 +51,7 @@ int WINAPI WinMain(
 
 	grafico.Create(&frame1);
 
-	grafico.BeginScene(0.5f, 0.5f, 0.5f, 1.0f);
+	grafico.ClearBuffer(0.2f, 0.0f, 0.2f);
 	grafico.EndFrame();
 
 	form.Loop();
