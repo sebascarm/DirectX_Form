@@ -169,15 +169,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DxEngine.cpp" />
     <ClCompile Include="DxForm.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="Graficos.cpp" />
+    <ClCompile Include="SwapChain.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DxEngine.h" />
     <ClInclude Include="DxForm.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="Graficos.h" />
+    <ClInclude Include="SwapChain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

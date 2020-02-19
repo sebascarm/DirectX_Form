@@ -29,13 +29,11 @@
 
 #include "DxForm.h"
 #include "Frame.h"
-#include "DxEngine.h"
-#include "SwapChain.h"
+#include "Graficos.h"
 
 DxForm form;
 Frame frame1;
-
-SwapChain* pSwapChain;
+Graficos grafico;
 
 
 int WINAPI WinMain(
@@ -47,20 +45,16 @@ int WINAPI WinMain(
 	form.Create(hInstance);
 	frame1.Create(&form, "Titulo", 10, 10, 640, 480);
 
-
+	
 	frame1.Draw();
 	frame1.Show();
 
-	DxEngine::get()->init();
-	pSwapChain=DxEngine::get()->createSwapChain();
-	pSwapChain->init();
+	grafico.Create(&frame1);
 
-
+	grafico.ClearBuffer(0.2f, 0.0f, 0.2f);
+	grafico.EndFrame();
 
 	form.Loop();
-	
-	// Fin
-	DxEngine::get()->release();
 
 	return 0;
 }

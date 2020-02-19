@@ -5,21 +5,52 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Clases">
+    <Filter Include="DxEngine">
+      <UniqueIdentifier>{014e4400-c090-49c9-8ea5-8380e2941855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Old">
       <UniqueIdentifier>{ac9c1262-ceeb-40fe-9c29-99c4b7070121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form">
+      <UniqueIdentifier>{4a1ab583-340e-40cd-a0d8-a9dea3055102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DxEngine\SwapChain">
+      <UniqueIdentifier>{d106c707-09f5-4be9-9407-964d2bfb6a48}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WinMain.cpp">
-      <Filter>Main</Filter>
+    <ClCompile Include="Graficos.cpp">
+      <Filter>Old</Filter>
     </ClCompile>
-    <ClCompile Include="DxForm.cpp" />
-    <ClCompile Include="Frame.cpp" />
-    <ClCompile Include="Graficos.cpp" />
+    <ClCompile Include="DxEngine.cpp">
+      <Filter>DxEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DxForm.cpp">
+      <Filter>Form</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Form</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="SwapChain.cpp">
+      <Filter>DxEngine\SwapChain</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DxForm.h" />
-    <ClInclude Include="Frame.h" />
-    <ClInclude Include="Graficos.h" />
+    <ClInclude Include="Graficos.h">
+      <Filter>Old</Filter>
+    </ClInclude>
+    <ClInclude Include="DxEngine.h">
+      <Filter>DxEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DxForm.h">
+      <Filter>Form</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Form</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapChain.h">
+      <Filter>DxEngine\SwapChain</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
